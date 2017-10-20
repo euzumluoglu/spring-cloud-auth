@@ -4,4 +4,4 @@ deploy:
   provider: heroku
   api_key: ${API_KEY}
   app: 
-    master: emn-cloud-eureka
+    master: emn-cloud-auth
