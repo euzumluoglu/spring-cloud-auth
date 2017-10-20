@@ -1,5 +1,5 @@
 language: java
-script: mvn clean install
+script: mvn clean install -DCONFIG_SERVER_URL=${CONFIG_SERVER_URL} -Dvcap.services.eureka-service.credentials.uri=${vcap.services.eureka-service.credentials.uri}
 deploy:
   provider: heroku
   api_key: ${API_KEY}
