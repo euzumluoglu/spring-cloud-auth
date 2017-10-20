@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: authserver
+# N.B. this is the default:
+  cloud:
+    config:
+      uri: ${CONFIG_SERVER_URL:http://localhost:8888}
+management:
+  security:
+    enabled: false
